@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="psicologia, psicologa, brasil, online, atendimento, terapia">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="author" content="Thiago Mars">
+
+    <title>Tayla Maia</title>
+    <link rel="website icon" type="png" href="icons/icon_TM.png">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 150 &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function handleScroll() {
+            var elements = document.querySelectorAll('.animated-element-view');
+
+            elements.forEach(function (element) {
+                if (isElementInViewport(element)) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+    </script>
+
+    <script>
+        window.addEventListener('load', function () {
+            document.getElementById('folder').classList.add('loaded');
+        });
+    </script>
+</head>
+
+<body>
+    <header id="bar_navigation">
+        <div id="logo">
+            <img src="icons/TM_VINHO.png" />
+            <div id="logo_descricao">
+                <h1>Tayla Maia</h1>
+                <!-- <h2>CRP: 11/13775</h2> -->
+            </div>
+        </div>
+        <div id="nav_container">
+            <nav>
+                <a href="#folder">Início</a>
+                <a href="#body_white">Serviços</a>
+                <a href="#sobre_mim">Sobre mim</a>
+                <a href="#div_contato">Contato</a>
+                <a href="#perguntas">Ajuda</a>
+            </nav>
+            <a href="https://www.instagram.com/taylamaiapsi/" target="_blank" id="item_menu_insta"><img src="/icons/instagram.png" />@taylamaiapsi</a>
+        </div>
+    </header>
+
+    <section id="folder" class="animated-element-view">
+        <header>
+            <h3>Vamos transformar a sua história, o primeiro passo começa na sua decisão de se cuidar.</h3>
+            <p>Você é a protagonista da história que deseja viver.</p>
+            <div class="button_whats border-radius-shadow">
+                <a href="https://wa.me/5588998009499?text=Olá!%20%20Gostaria%20de%20marca%20uma%20sessão!"
+                    target=”_blank”>
+                    <img src="icons/whatsapp_icon.png" />
+                    Agende sua sessão
+                </a>
+            </div>
+            <div id="assinatura_crp">
+                <p>Tayla Araújo Maia</p>
+                <p>CRP: 11 / 13775</p>
+            </div>
+        </header>
+    </section>
+
+    <section id="sobre_mim">
+        <div id="text_sobre_mim" class="div_meio shadow">
+            <p class="animated-element-view">Sobre mim</p>
+            <h1 class="animated-element-view">Tayla Araújo Maia</h1>
+            <p class="animated-element-view">Me chamo Tayla Maia, escolhi ser psicóloga por ser apaixonada em
+                transformar vidas, acredito que quando superamos e aceitamos as dores da nossa história conseguimos
+                construir uma vida mais leve e livre, cabe destacar que aceitar não é concordar, mas viver apesar da
+                dor.</p>
+            <p class="animated-element-view">Quando criança tive que enfrentar muitas situações difíceis e desafiadoras
+                para tão pouca idade. O que me fez ter que amadurecer mais rápido, embora o amadurecimento emocional
+                tenha sido uma jornada à parte. Enfrentar esses momentos difíceis me fez acreditar em um futuro melhor,
+                criando perspectivas de mudança e ressignificação.</p>
+            <p class="animated-element-view">Desse modo, minha crença fundamental é que nós somos as únicas capazes de
+                mudar o rumo da nossa
+                vida, independentemente de onde viemos. A Terapia Cognitivo-Comportamental (TCC), abordagem a qual
+                utilizo na clínica, solidifica minha crença que não somos definidos por eventos passados, mas sim pelo
+                que pensamos e escolhemos fazer com essas experiências.</p>
+            <p class="animated-element-view">Utilizo o Instagram (<a href="https://www.instagram.com/taylamaiapsi/" target="_blank">@taylamaiapsi</a>) como principal forma de compartilhar
+                conhecimento e
+                inspiração com o mundo. Minha missão é trabalhar com mulheres de todos os lugares do mundo que desejam
+                reconciliar-se com seu passado, romper com o vitimismo e assumir o papel de protagonistas de suas
+                próprias vidas.</p>
+            <div class="button_whats border-radius-shadow">
+                <a href="https://wa.me/5588998009499?text=Olá!%20%20Gostaria%20de%20marca%20uma%20sessão!"
+                    target=”_blank”>
+                    <img src="icons/whatsapp_icon.png" />
+                    Fale comigo no WhatsApp
+                </a>
+            </div>
+        </div>
+        <div id="img_sobre_mim" class="shadow">
+            <img src="images/back_m.jpeg" />
+        </div>
+    </section>
+
+    <div id="body_white">
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <div class="container-cards">
+                <div class="card animated-element-view">
+                    <div class="card-titulo">
+                        <img class="card_img" src="icons/conversa.png" />
+                        <h4>Psicoterapia Individual</h4>
+                    </div>
+                    <p>Fazer psicoterapia foi uma decisão que transformou a minha história e por isso estou aqui.</p>
+                    <p>Serei seu guia nessa jornada de transformação. Utilizo como manejo terapêutico a Terapia
+                        Cognitiva
+                        Comportamental (TCC), ela diz que não são as coisas que nos adoecem mas o que pensamos sobre
+                        elas.
+                        Se você quer lidar com pensamentos negativos e superar traumas da sua história, vem comigo.</p>
+                    <div class="tag animated-element-view">
+                        <p>Duração da sessão: <span>50 minutos</span></p>
+                        <p>Modelo de atendimento: <span>on-line pelo Google Meet</span></p>
+                    </div>
+                    <!-- <div class="button_whats border-radius-shadow button_services display_lg">
+                        <a href="https://wa.me/5588998009499?text=Olá!%20%20Gostaria%20de%20marca%20uma%20sessão!"
+                            target=”_blank”>
+                            <img src="icons/whatsapp_icon.png" />
+                            Mais informações sobre a Psicoterapia
+                        </a>
+                    </div> -->
+                </div>
+                <div class="card animated-element-view">
+                    <div class="card-titulo">
+                        <img class="card_img" src="icons/grupo.png" />
+                        <h4>Grupo terapêutico para mulheres</h4>
+                    </div>
+                    <p>O grupo terapêutico é um espaço fechado, seguro e exclusivo para mulheres que buscam serem
+                        ouvidas,
+                        acolhidas e amparadas por meio de troca de experiências, cada encontro visa gerar
+                        autoconhecimento,
+                        liberdade, enfrentamento e transformação de vida.</p>
+                    <div class="tag animated-element-view">
+                        <p>As vagas são limitadas.</p>
+                    </div>
+                    <!-- <div class="button_whats border-radius-shadow button_services display_lg">
+                        <a href="https://wa.me/5588998009499?text=Olá!%20%20Gostaria%20de%20marca%20uma%20sessão!"
+                            target=”_blank”>
+                            <img src="icons/whatsapp_icon.png" />
+                            Mais informações sobre o Grupo Terapêutico
+                        </a>
+                    </div> -->
+                </div>
+                <div class="card animated-element-view">
+                    <div class="card-titulo">
+                        <img class="card_img" src="icons/palestra.png" />
+                        <h4>Palestras e psicoeducação</h4>
+                    </div>
+                    <p>Está em busca de inspiração e crescimento pessoal? Nossas palestras visam psicoeducar sobre as
+                        emoções, sentimentos e saúde emocional.</p>
+                    <p>Quando nos conhecemos e temos recursos de enfrentamento para
+                        as dificuldades da nossa jornada conseguimos seguir uma vida mais leve mesmo diante da dor.</p>
+                    <div class="tag animated-element-view">
+                        <p>Realizada com agendamento prévio.</p>
+                    </div>
+                    <!-- <div class="button_whats border-radius-shadow button_services display_lg">
+                        <a href="https://wa.me/5588998009499?text=Olá!%20%20Gostaria%20de%20marca%20uma%20sessão!"
+                            target=”_blank”>
+                            <img src="icons/whatsapp_icon.png" />
+                            Mais informações 
+                        </a>
+                    </div> -->
+                </div>
+                <div class="card animated-element-view">
+                    <div class="card-titulo">
+                        <img class="card_img" src="icons/conselho.png" />
+                        <h4>Aconselhamento psicológico</h4>
+                    </div>
+                    <p>É um espaço de acolhimento e busca por apoio, não importa a situação, mas cada uma de nós
+                        enfrenta
+                        momentos difíceis na vida. Procurar e reconhecer a necessidade de ajuda profissional é o
+                        primeiro
+                        passo para uma vida mais leve. </p>
+                    <p>Buscar aconselhamento psicológico é abrir caminhos para ressignificar vivências que causam dor e
+                        sofrimento.</p>
+                    <!-- <div class="button_whats border-radius-shadow button_services display_lg">
+                        <a href="https://wa.me/5588998009499?text=Olá!%20%20Gostaria%20de%20marca%20uma%20sessão!"
+                            target=”_blank”>
+                            <img src="icons/whatsapp_icon.png" />
+                            Mais informações sobre Aconselhamento Psicológico
+                        </a>
+                    </div> -->
+                </div>
+                <div class="card animated-element-view display_sm">
+                    <div class="card-titulo">
+                        <h4>Gostaria de conhecer algum serviço?</h4>
+                    </div>
+                    <div class="flex-center" style="margin-top: 2vh;">
+                        <div class="button_whats border-radius-shadow button_services" style="margin: 0;">
+                            <a href="https://wa.me/5588998009499?text=Olá!%20%20Gostaria%20de%20marca%20uma%20sessão!"
+                                target=”_blank”>
+                                <img src="icons/whatsapp_icon.png" />
+                                Mais informações
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card dics_services display_lg fle">
+                    <div class="tag_type animated-element-view flex-center">
+                        <h3>Gostaria de saber mais sobre algum serviços?</h3>
+                        <div class="button_whats border-radius-shadow button_services" style="margin: 0;">
+                            <a href="https://wa.me/5588998009499?text=Olá!%20%20Gostaria%20de%20marca%20uma%20sessão!"
+                                target=”_blank”>
+                                <img src="icons/whatsapp_icon.png" />
+                                Mais informações
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+
+    <!-- <div class="dics_services flex-center back_new">
+        <h3>Gostaria de saber mais sobre algum serviços?</h3>
+        <div class="button_whats border-radius-shadow button_services" style="margin: 0;">
+            <a href="https://wa.me/5588998009499?text=Olá!%20%20Gostaria%20de%20marca%20uma%20sessão!"
+                target=”_blank”>
+                <img src="icons/whatsapp_icon.png" />
+                Mais informações aqui
+            </a>
+        </div>
+    </div> -->
+
+
+
+    <div id="avaliacoes">
+        <div class="titulo">
+            <h2>Avaliações</h2>
+        </div>
+        <div class="content">
+            <div class="container-comments">
+                <a href="https://g.co/kgs/kHCZWS" target="_blank" class="card_comment shadow animated-element-view">
+                    <div class="container_perfil">
+                        <img class="shadow" src="icons/unnamed_p.png" />
+                        <div class="info_perfil">
+                            <p>placida leticia</p>
+                            <p>agosto de 2023</p>
+                        </div>
+                    </div>
+                    <div class="container_content">
+                        <p>&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                        <p>Profissional excelente, que ajudou minha família de uma forma incrível, e conquistou o amor
+                            do meu bem mais precioso, minha filha. Obrigada Dr. Por ser essa pessoa tão incrível e essa
+                            profissional ímpar.</p>
+                    </div>
+                </a>
+
+                <a href="https://g.co/kgs/bFEtHP" target="_blank" class="card_comment shadow animated-element-view">
+                    <div class="container_perfil">
+                        <img class="shadow" src="icons/unnamed-a.png" />
+                        <div class="info_perfil">
+                            <p>Adrian Patrício</p>
+                            <p class="tag_data">outubro de 2022</p>
+                        </div>
+                    </div>
+                    <div class="container_content">
+                        <p>&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                        <p>Com certeza uma profissional que merece muito mais que 5 estrelas, além da sua metodologia
+                            incrível uma pessoa super carismática e que com certeza me ajudou e está me ajudando no meu
+                            processo de mudança! 💕</p>
+                    </div>
+                </a>
+
+                <a href="https://g.co/kgs/1cTXqf" target="_blank" class="card_comment shadow animated-element-view">
+                    <div class="container_perfil">
+                        <img class="shadow" src="icons/unnamed_e.png" />
+                        <div class="info_perfil">
+                            <p>Daniela Oliveira</p>
+                            <p class="tag_data">agosto de 2023</p>
+                        </div>
+                    </div>
+                    <div class="container_content">
+                        <p>&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                        <p>Essa psicóloga é a melhor profissional que já conheci. A terapia esta transformando minha
+                            vida. Gratidão minha Psi💜</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="flex-center" id="perguntas">
+        <h3 class="title_container">Perguntas frequentes</h3>
+        <div class="container-question">
+            <details class="animated-element-view shadow">
+                <summary>
+                    Como é a primeira sessão ?
+                </summary>
+                <p class="corpo-details">A primeira sessão é nosso contato inicial, onde vou te conhecer, entender quais
+                    são suas dores e demandas para o processo terapêutico, iremos elencar suas demandas e formular uma
+                    plano de trabalho, ou seja, técnicas e intervenções a qual iremos utilizar no decorrer do seu
+                    acompanhamento. Quero te dizer que você não precisa ter medo ou se sentir pressionada para realizar
+                    esse primeiro contato, irei te ouvir e acolher sua história sem julgar. Também quero que você saiba
+                    que a terapia é processual, então você não precisar contar toda a sua vida ou expor conteúdos que te
+                    causa desconforto nesse primeiro momento. Iremos construir um vínculo terapêutico seguro e de
+                    confiança, assim teremos uma forte aliança terapêutica e aos poucos você se sentirá segura e
+                    confiante para aprofundar suas dores e juntas iremos elaborar meios para lidar com elas.</p>
+            </details>
+
+            <details class="animated-element-view shadow">
+                <summary>
+                    Quanto tempo dura o tratamento com você ?
+                </summary>
+                <p class="corpo-details">Na psicologia não podemos definir um tempo de tratamento, pois cada indivíduo é
+                    único e carrega uma história com significados e vivências muito pessoais. A durabilidade do seu
+                    processo terapêutico vai depender das demandas que você apresenta, ou seja, quanto mais grave mais
+                    tempo. Outro fator de suma importância é o comprometimento terapêutico, ou seja, o sucesso e
+                    resultado da terapia não depende UNICAMENTE da psicóloga, mas do interesse e comprometimento da
+                    paciente. O terapeuta é o guia e você a protagonista da história que deseja escrever.</p>
+            </details>
+
+            <details class="animated-element-view shadow">
+                <summary>
+                    Como saber se a terapia está funcionando?
+                </summary>
+                <p class="corpo-details">Observe o contexto que você buscou a terapia e contexto atual que você se
+                    encontra, bem como: Alívio dos sintomas, maior compreensão das suas emoções, pensamentos e
+                    comportamentos, melhora nos seus relacionamentos, autoconhecimento, desenvolvimento de novas
+                    habilidades e enfrentamento, redução de sofrimento e pensamentos negativos e melhora da qualidade de
+                    vida. </p>
+            </details>
+
+            <details class="animated-element-view shadow">
+                <summary>
+                    Será que realmente posso confiar no psicólogo ? Tenho vergonha de expor minha vida e
+                    vulnerabilidades.
+                </summary>
+                <p class="corpo-details">O trabalho do psicólogo é sigiloso.</p>
+            </details>
+
+            <details class="animated-element-view shadow">
+                <summary>
+                    Qual abordagem de tratamento você realiza?
+                </summary>
+                <p class="corpo-details">Utilizo como manejo terapêutico a Terapia Cognitiva Comportamental (TCC), ela
+                    diz que não são as coisas que nos adoecem mas o que pensamos sobre elas. Não é tua história que te
+                    adoece, mas o que você pensa sobre ela.Então por meio da terapia me proponho a te ajudar a
+                    transformar a dor no seu passado em um presente mais leve.</p>
+            </details>
+
+            <details class="animated-element-view shadow">
+                <summary>
+                    Por onde as sessões são realizadas ?
+                </summary>
+                <p class="corpo-details">Nossa é realizada via google meet, pois é uma plataforma segura e de fácil
+                    acesso.</p>
+            </details>
+
+            <details class="animated-element-view shadow">
+                <summary>
+                    Não me sinto segura pra fazer a terapia on-line, o que você pode me dizer ?
+                </summary>
+                <p class="corpo-details">O Atendimento Psicológico On-line é uma modalidade reconhecida pelo Conselho
+                    Federal de Psicologia (CFP) de acordo com a Resolução 11/2018, sendo totalmente seguro e eficaz. Com
+                    a pandemia em 2020 essa modalidade de atendimento ganhou maior visibilidade e vem crescendo a cada
+                    dia, pois a paciente não tem a necessidade de se deslocar o que gera mais economia de tempo e
+                    dinheiro. Você pode fazer a sessão no conforto da sua casa. Te convido a conhecer mais sobre o meu
+                    trabalho e assim você mesmo poderá tirar suas próprias conclusões, afinal essa é a melhor forma de
+                    você saber se funciona ou não. Vem comigo?</p>
+            </details>
+
+            <details class="animated-element-view shadow">
+                <summary>
+                    Como faço pra agendar minha primeira consulta com você ?
+                </summary>
+                <p class="corpo-details">Você pode clicar no botão de whatsapp e será direcionada para uma conversa
+                    personalizada comigo, nesse momento farei um acolhimento inicial e tirarei todas as dúvidas que
+                    ainda restarem, será um prazer te conhecer mais de perto e poder te ajudar. Também te convido a me
+                    seguir no instagram (@taylamaiapsi) lá me relaciono diariamente por meio de conteúdos e reflexões
+                    que podem te ajudar. </p>
+            </details>
+        </div>
+    </section>
+
+    <div id="div_contato" class="flex-center">
+        <img id="img_contato" src="images/back_s.png" />
+        <div class="footer_contact border-radius-shadow animated-element-view">
+            <p>Fale comigo</p>
+            <a href="https://wa.me/5588998009499?text=Olá!%20%20Gostaria%20de%20marca%20uma%20sessão!"
+                target=”_blank”><img src="icons/whatsapp_icon.png" />
+                (88) 99800-9499</a>
+            <a href="https://instagram.com/taylamaiapsi?igshid=OGQ5ZDc2ODk2ZA==" target=”_blank”><img
+                    src="icons/instagram.png" />@taylamaiapsi</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2023 - Tayla Araújo Maia</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+
+    <a id="button_whats_fixed" href="https://wa.me/5588998009499?text=Olá!%20%20Gostaria%20de%20marca%20uma%20sessão!"
+        target=”_blank” title="Mensagem via Whatsapp">
+        <img id="icon_button_whats" src="icons/whatsapp.png" />
+    </a>
+
+    <!-- <div id="buttons_inta_whats">
+        <a id="" href="" target="_blank" title="">
+            <img id="" src="icons/instagram.png" />
+        </a>
+        <a id="" href="" target="_blank" title="">
+            <img id="" src="icons/whatsapp.png" />
+        </a>
+    </div> -->
+
+
+
+
+</body>
+
+</html>
